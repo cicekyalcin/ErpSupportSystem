@@ -92,7 +92,12 @@ namespace ErpSupport.Desktop
                         SessionManager.FullName = result.GetProperty("fullName").GetString() ?? "";
 
                         MessageBox.Show($"Hoşgeldin, {SessionManager.FullName}!\nSisteme güvenli giriş yapıldı.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // Ana paneli oluştur ve göster
+                        MainForm mainPanel = new MainForm();
+                        mainPanel.Show();
 
+                        // Eski giriş ekranını (kendisini) gizle
+                        this.Hide();
                         // İlerleyen fazda burada Form2'yi (Ana Ekranı) açacağız.
                     }
                     else
