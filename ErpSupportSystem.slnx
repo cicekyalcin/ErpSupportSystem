@@ -1,1 +1,7 @@
-<Solution />
+<Solution>
+  <Folder Name="/DatabaseScripts/">
+    <File Path="Schema.sql" />
+  </Folder>
+  <Project Path="ErpSupport.Api/ErpSupport.Api.csproj" />
+  <Project Path="ErpSupport.Desktop/ErpSupport.Desktop.csproj" />
+</Solution>
